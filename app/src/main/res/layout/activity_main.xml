@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.krupa.calculator.MainActivity">
+
+    <EditText
+        android:id="@+id/idfirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/idsec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/idfirst"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        style="@style/krupa"
+        android:id="@+id/idplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/idfirst"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/idminus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/idplus"
+        android:layout_alignRight="@+id/idplus"
+        android:layout_alignTop="@+id/idsec"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/idmul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idminus"
+        android:layout_alignStart="@+id/idminus"
+        android:layout_below="@+id/idminus"
+        android:layout_marginTop="43dp"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/iddiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/idmul"
+        android:layout_marginTop="50dp"
+        android:text="/"
+        android:layout_alignLeft="@+id/idmul"
+        android:layout_alignStart="@+id/idmul" />
+
+    <Button
+        android:id="@+id/idequal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/idmul"
+        android:text="newIntent" />
+
+    <TextView
+        android:id="@+id/idresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/iddiv"
+        android:layout_alignBottom="@+id/iddiv"
+        android:layout_alignEnd="@+id/idsec"
+        android:layout_alignRight="@+id/idsec"
+        android:text="answer" />
+
+    <Spinner
+        android:id="@+id/id_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/iddiv"
+        android:layout_marginTop="43dp" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculator</string>
+
+    <string-array name="mystring">
+        <item>Blue</item>
+        <item>Orange</item>
+        <item>Red</item>
+        <item>Green</item>
+    </string-array>
+</resources>
